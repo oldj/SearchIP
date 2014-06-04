@@ -33,7 +33,7 @@ GetIPInfo.prototype = {
 			"<strong>", ip, "</strong>",
 			"</div>",
 			"<div class='oj-ip2location-content'>",
-			"loading...",
+			"查询中...",
 			"</div>",
 			"</div>",
 			"</div>"

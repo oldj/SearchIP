@@ -3,8 +3,8 @@
 <head lang="zh-cn">
     <meta charset="UTF-8">
     <title>查IP</title>
-    <link href="popup.css" rel="stylesheet" type="text/css">
-    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="css/popup.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
     <script src="jquery.js"></script>
     <script src="cf.js"></script>
     <script src="content.js"></script>
@@ -18,16 +18,17 @@
     <div id="wrapper">
         <h1>查IP</h1>
 
-        <div id="operation-input">
-            <input type="text" id="ipt-ip" name="ip" placeholder="在这儿输入IP地址">
-        </div>
-
-        <div id="operation-search">
-            <button>查询</button>
+        <div id="operation">
+            <input type="text" id="ipt-ip" name="ip" placeholder="请输入IP">
+            <button>查</button>
         </div>
 
         <div id="result">
             <div id="content"></div>
+        </div>
+
+        <div id="footer">
+            查IP | <a href="http://oldj.net" target="_blank">oldj.net</a>
         </div>
     </div>
 </body>

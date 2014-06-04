@@ -12,11 +12,16 @@ $(document).ready(function () {
 
 		m = new GetIPInfo();
 		var ip = $("input#ipt-ip").val();
+		var el_cnt = $("#content");
 
 		ip = ip.replace(/^\s+|\s+$/g, "");
-		if (!ip) return;
+		if (!ip) {
+			el_cnt.fadeOut();
+			return;
+		}
 
-		m.setInformParent($("#content"));
+		el_cnt.fadeIn(500);
+		m.setInformParent(el_cnt);
 		m.get(ip, null);
 	}
 
