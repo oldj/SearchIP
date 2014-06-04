@@ -1,0 +1,49 @@
+{
+	"manifest_version": 2,
+	"name": "查IP",
+	"version": "0.1.5",
+	"description": "查找IP对应的地址。",
+	"icons": {
+		"16": "icon_16x16.png",
+		"32": "icon_32x32.png",
+		"128": "icon_128x128.png"
+	},
+	"author": "oldj",
+	"options_page": "options.html",
+	"devtools_page": "devtools.html",
+	"permissions": [
+		"tabs", "http://*/*", "https://*/*", "storage", "contextMenus"
+	],
+	"browser_action": {
+		"default_icon": "icon_128x128.png",
+		"default_title": "IP2Location",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"file:///*/*",
+				"http://*/*",
+				"https://*/*"
+			],
+			"css": [
+				"main.css"
+			],
+			"js": [
+				"jquery.js",
+				"cf.js",
+				"content.js",
+				"lib_methods/ip138.js",
+				"lib_methods/ip.cn.js",
+				"lib_methods/ip.qq.js"
+			],
+			"run_at": "document_end",
+			"all_frames": false
+		}
+	],
+	"background": {
+		"scripts": ["bg.js"]
+	},
+	"web_accessible_resources": [
+	]
+}
