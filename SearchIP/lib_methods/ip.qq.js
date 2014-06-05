@@ -17,7 +17,7 @@ GetIPInfo.addMethod("ip.qq", function (self, ip, success, fail) {
 		a = cnt.split("change_hint");
 		cnt = a[0];
 
-		a = cnt.match(/<span>(.*?)<\/span>/);
+		a = cnt.match(/<span>(.+?)<\/span>/);
 
 		if (a) {
 			cnt = a[1];

@@ -18,7 +18,7 @@ GetIPInfo.addMethod("ip.cn", function (self, ip, success, fail) {
 
 		if (!cnt) fail();
 
-		a = cnt.match(/来自：(.*?)</);
+		a = cnt.match(/来自：(.+?)</);
 
 		if (a) {
 			cnt = a[1];
