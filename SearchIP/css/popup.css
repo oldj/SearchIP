@@ -63,18 +63,22 @@ h1 {
 #wrapper .oj-ip2location {
 	box-shadow: none;
 	border: none;
+	background: #fff;
 }
 
 #result {
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 #content {
 	display: none;
+}
+#content .oj-ip2location-title {
 	background: #ffc;
 	border: solid 1px #ccc;
 	border-left: none;
 	border-right: none;
-	padding: 16px 0;
+	padding: 10px 10px;
+	margin-bottom: 16px;
 }
 
 #footer {

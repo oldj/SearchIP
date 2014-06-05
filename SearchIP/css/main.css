@@ -45,3 +45,9 @@
 .oj-close:hover {
 	color: #ccc;
 }
+
+span.oj-searching {
+	display: inline-block;
+	padding-right: 25px;
+	background: url(img/loading_small.gif) no-repeat 100% 50%;
+}

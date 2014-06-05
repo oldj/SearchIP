@@ -21,7 +21,7 @@ GetIPInfo.addMethod("ip138", function (self, ip, success, fail) {
 			return;
 		}
 
-		a = cnt.match(/<li>(.*?)<\/li>/ig);
+		a = cnt.match(/<li>(.+?)<\/li>/ig);
 		if (!a) {
 			fail();
 		} else {
