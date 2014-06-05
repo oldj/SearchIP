@@ -8,6 +8,4 @@
 
 ## 安装
 
-请使用Chrome浏览器访问 [https://chrome.google.com/webstore/detail/%E6%9F%A5ip/gabaabhlnpanpkjjhpaiaeliamhiaaea](Chrome商店) 安装本插件。
-
-
+请使用Chrome浏览器访问 [Chrome商店](https://chrome.google.com/webstore/detail/%E6%9F%A5ip/gabaabhlnpanpkjjhpaiaeliamhiaaea) 安装本插件。
