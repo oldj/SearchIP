@@ -39,6 +39,12 @@ input#ipt-ip {
 h1 {
 	padding: 10px 10px 0 10px;
 }
+#wrapper .oj-ip2location-content {
+	min-height: 48px;
+}
+#wrapper .oj-ip2location-content h6 {
+	color: #aaa;
+}
 #operation {
 	height: 50px;
 	padding: 10px;
