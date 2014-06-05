@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "查IP",
-	"version": "0.1.7",
+	"version": "0.1.8",
 	"description": "查找IP对应的地址。",
 	"icons": {
 		"16": "images/icon_16x16.png",
