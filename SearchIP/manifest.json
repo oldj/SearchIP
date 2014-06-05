@@ -4,9 +4,9 @@
 	"version": "0.1.5",
 	"description": "查找IP对应的地址。",
 	"icons": {
-		"16": "icon_16x16.png",
-		"32": "icon_32x32.png",
-		"128": "icon_128x128.png"
+		"16": "images/icon_16x16.png",
+		"32": "images/icon_32x32.png",
+		"128": "images/icon_128x128.png"
 	},
 	"author": "oldj",
 	"options_page": "options.html",
@@ -15,8 +15,8 @@
 		"tabs", "http://*/*", "https://*/*", "storage", "contextMenus"
 	],
 	"browser_action": {
-		"default_icon": "icon_128x128.png",
-		"default_title": "IP2Location",
+		"default_icon": "images/icon_128x128.png",
+		"default_title": "SearchIP",
 		"default_popup": "popup.html"
 	},
 	"content_scripts": [
@@ -27,7 +27,7 @@
 				"https://*/*"
 			],
 			"css": [
-				"main.css"
+				"css/main.css"
 			],
 			"js": [
 				"jquery.js",

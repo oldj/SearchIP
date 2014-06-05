@@ -1,0 +1,91 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #ccc;
+	font-size: 12px;
+	line-height: 20px;
+	color: #000;
+	font-family: Verdana, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+a {
+	text-decoration: none;
+}
+
+#wrapper {
+	width: 220px;
+	background: #fff url(img/logo_opacity_x.png) no-repeat 100% 0;
+}
+h1, h2, h3 {
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	line-height: 30px;
+}
+
+input#ipt-ip {
+	width: 159px;
+	height: 24px;
+	line-height: 24px;
+	padding: 2px 4px;
+	border-radius: 3px 0 0 3px;
+	background: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	border-right: none;
+	-moz-box-shadow:    inset 0px 1px 0px 0px #ECECEC;
+	box-shadow:         inset 0px 1px 0px 0px #ECECEC;
+	float: left;
+}
+
+h1 {
+	padding: 10px 10px 0 10px;
+}
+#operation {
+	height: 50px;
+	padding: 10px;
+}
+#operation button {
+	margin: 0;
+	padding: 2px 4px;
+	width: 32px;
+	height: 30px;
+	overflow: hidden;
+	line-height: 24px;
+	font-size: 14px;
+	border-radius: 0 3px 3px 0;
+
+	background: #F5F5F5;
+	border: 1px solid #CCCCCC;
+}
+
+#wrapper a.oj-close {
+	display: none;
+}
+#wrapper .oj-ip2location {
+	box-shadow: none;
+	border: none;
+}
+
+#result {
+	margin-bottom: 60px;
+}
+#content {
+	display: none;
+	background: #ffc;
+	border: solid 1px #ccc;
+	border-left: none;
+	border-right: none;
+	padding: 16px 0;
+}
+
+#footer {
+	background: #f5f5f5;
+	font-size: 12px;
+	padding: 10px;
+	color: #ccc;
+}
+#footer a {
+	color: #ccc;
+}
+#footer a:hover {
+	color: #999;
+}
