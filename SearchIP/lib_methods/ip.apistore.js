@@ -11,12 +11,11 @@ GetIPInfo.addMethod("ip.apistore", function (self, ip, success, fail) {
 	$.getJSON(url, {
 		ip: ip
 	}, function (res) {
-
 		var cnt, d;
-		if (res.retData) {
+		if (res && res.retData) {
 			d = res.retData;
 			cnt = [
-				d.country, d.province, d.city, d.district, " ", d.carrier
+				d.country || "", d.province || "", d.city || "", d.district || "", " ", d.carrier || ""
 			].join("");
 			success(cnt);
 		} else {
