@@ -1,49 +1,54 @@
 {
-	"manifest_version": 2,
-	"name": "查IP",
-	"version": "0.1.8",
-	"description": "查找IP对应的地址。",
-	"icons": {
-		"16": "images/icon_16x16.png",
-		"32": "images/icon_32x32.png",
-		"128": "images/icon_128x128.png"
-	},
-	"author": "oldj",
-	"options_page": "options.html",
-	"devtools_page": "devtools.html",
-	"permissions": [
-		"tabs", "http://*/*", "https://*/*", "storage", "contextMenus"
-	],
-	"browser_action": {
-		"default_icon": "images/icon_128x128.png",
-		"default_title": "SearchIP",
-		"default_popup": "popup.html"
-	},
-	"content_scripts": [
-		{
-			"matches": [
-				"file:///*/*",
-				"http://*/*",
-				"https://*/*"
-			],
-			"css": [
-				"css/main.css"
-			],
-			"js": [
-				"jquery.js",
-				"cf.js",
-				"content.js",
-				"lib_methods/ip138.js",
-				"lib_methods/ip.cn.js",
-				"lib_methods/ip.qq.js"
-			],
-			"run_at": "document_end",
-			"all_frames": false
-		}
-	],
-	"background": {
-		"scripts": ["bg.js"]
-	},
-	"web_accessible_resources": [
-	]
+  "manifest_version": 2,
+  "name": "查IP",
+  "version": "0.1.9",
+  "description": "查找IP对应的地址。",
+  "icons": {
+    "16": "images/icon_16x16.png",
+    "32": "images/icon_32x32.png",
+    "128": "images/icon_128x128.png"
+  },
+  "author": "oldj",
+  "options_page": "options.html",
+  "devtools_page": "devtools.html",
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "storage",
+    "contextMenus"
+  ],
+  "browser_action": {
+    "default_icon": "images/icon_128x128.png",
+    "default_title": "SearchIP",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "file:///*/*",
+        "http://*/*",
+        "https://*/*"
+      ],
+      "css": [
+        "css/main.css"
+      ],
+      "js": [
+        "jquery.js",
+        "cf.js",
+        "content.js",
+        "lib_methods/ip138.js",
+        "lib_methods/ip.apistore.js",
+        "lib_methods/ip.cn.js",
+        "lib_methods/ip.qq.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
+  "background": {
+    "scripts": ["bg.js"]
+  },
+  "web_accessible_resources": [
+  ]
 }
