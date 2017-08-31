@@ -1,25 +1,25 @@
 /**
  * author: oldj
- * blog: http://oldj.net
+ * blog: https://oldj.net
  */
 
-GetIPInfo.addMethod("ip.apistore", function (self, ip, success, fail) {
-	// @see http://apistore.baidu.com/astore/serviceinfo/1840.html
+GetIPInfo.addMethod('ip.apistore', function (self, ip, success, fail) {
+  // @see http://apistore.baidu.com/astore/serviceinfo/1840.html
 
-	var url = "http://apistore.baidu.com/microservice/iplookup";
+  var url = 'http://apistore.baidu.com/microservice/iplookup'
 
-	$.getJSON(url, {
-		ip: ip
-	}, function (res) {
-		var cnt, d;
-		if (res && res.retData) {
-			d = res.retData;
-			cnt = [
-				d.country || "", d.province || "", d.city || "", d.district || "", " ", d.carrier || ""
-			].join("");
-			success(cnt);
-		} else {
-			fail();
-		}
-	});
-});
+  $.getJSON(url, {
+    ip: ip
+  }, function (res) {
+    var cnt, d
+    if (res && res.retData) {
+      d = res.retData
+      cnt = [
+        d.country || '', d.province || '', d.city || '', d.district || '', ' ', d.carrier || ''
+      ].join('')
+      success(cnt)
+    } else {
+      fail()
+    }
+  })
+})

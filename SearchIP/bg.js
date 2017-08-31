@@ -1,58 +1,58 @@
 /**
  * author: oldj
- * blog: http://oldj.net
+ * blog: https://oldj.net
  */
 
 //function genericOnClick(info, tab) {
-function genericOnClick(info) {
+function genericOnClick (info) {
 //	console.log("item " + info.menuItemId + " was clicked");
 //	console.log("info: " + JSON.stringify(info));
 //	console.log("tab: " + JSON.stringify(tab));
 
-    var cnt = info.selectionText;
+  var cnt = info.selectionText
 
-    if (!cnt || !cnt.match(/^(\d+\.){3}\d+$/)) {
-        return;
-    }
+  if (!cnt || !cnt.match(/^(\d+\.){3}\d+$/)) {
+    return
+  }
 
-    var a = cnt.split(".");
-    var i, c;
-    for (i = 0; i < a.length; i++) {
-        c = parseInt(a[i]);
-        if (c > 255) return;
-    }
+  var a = cnt.split('.')
+  var i, c
+  for (i = 0; i < a.length; i++) {
+    c = parseInt(a[i])
+    if (c > 255) return
+  }
 
-    // match ip address
+  // match ip address
 
-    window.postMessage(cnt, "*");
-    chrome.tabs.query({
-        active: true,
-        currentWindow: true
-    }, function (tabs) {
-        chrome.tabs.sendMessage(tabs[0].id, {
-            action: "SendIP",
-            ip: cnt
-        }, function (response) {
+  window.postMessage(cnt, '*')
+  chrome.tabs.query({
+    active: true,
+    currentWindow: true
+  }, function (tabs) {
+    chrome.tabs.sendMessage(tabs[0].id, {
+      action: 'SendIP',
+      ip: cnt
+    }, function (response) {
 
-        })
-    });
+    })
+  })
 
 }
 
 // Create one test item for each context type.
 //var contexts = ["page", "selection", "link", "editable", "image", "video", "audio"];
 var contexts = {
-    "selection": "IP转地址"
-};
+  'selection': 'IP转地址'
+}
 for (var k in contexts) {
-    if (!contexts.hasOwnProperty(k)) continue;
+  if (!contexts.hasOwnProperty(k)) continue
 
-    var title = contexts[k];
-    var id = chrome.contextMenus.create({
-        "title": title,
-        "contexts": [k],
-        "onclick": genericOnClick
-    });
+  var title = contexts[k]
+  var id = chrome.contextMenus.create({
+    'title': title,
+    'contexts': [k],
+    'onclick': genericOnClick
+  })
 //	console.log("'" + context + "' item:" + id);
 }
 
@@ -71,7 +71,6 @@ for (var k in contexts) {
  });
  console.log("parent:" + parent + " child1:" + child1 + " child2:" + child2);
  */
-
 
 // Create some radio items.
 /*

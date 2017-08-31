@@ -1,100 +1,113 @@
 body {
-	margin: 0;
-	padding: 0;
-	background: #ccc;
-	font-size: 12px;
-	line-height: 20px;
-	color: #000;
-	font-family: Verdana, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000;
+  font-family: Verdana, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
+
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 #wrapper {
-	width: 220px;
-	background: #fff url(img/logo_opacity_x.png) no-repeat 100% 0;
+  width: 220px;
+  background: #fff url(img/logo_opacity_x.png) no-repeat 100% 0;
 }
+
 h1, h2, h3 {
-	font-size: 14px;
-	margin: 0;
-	padding: 0;
-	line-height: 30px;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
 }
 
 input#ipt-ip {
-	width: 159px;
-	height: 24px;
-	line-height: 24px;
-	padding: 2px 4px;
-	border-radius: 3px 0 0 3px;
-	background: #FFFFFF;
-	border: 1px solid #CCCCCC;
-	border-right: none;
-	box-shadow: inset 0 1px 0 0 #ECECEC;
-	float: left;
+  width: 159px;
+  height: 24px;
+  line-height: 24px;
+  padding: 2px 4px;
+  border-radius: 3px 0 0 3px;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-right: none;
+  box-shadow: inset 0 1px 0 0 #ECECEC;
+  float: left;
+  outline: none;
 }
 
 h1 {
-	padding: 10px 10px 0 10px;
+  padding: 10px 10px 0 10px;
 }
-#wrapper .oj-ip2location-content {
-	min-height: 60px;
-}
-#wrapper .oj-ip2location-content h6 {
-	color: #aaa;
-}
-#operation {
-	height: 50px;
-	padding: 10px;
-}
-#operation button {
-	margin: 0;
-	padding: 2px 4px;
-	width: 32px;
-	height: 30px;
-	overflow: hidden;
-	line-height: 24px;
-	font-size: 14px;
-	border-radius: 0 3px 3px 0;
 
-	background: #F5F5F5;
-	border: 1px solid #CCCCCC;
+#wrapper .oj-ip2location-content {
+  min-height: 60px;
+}
+
+#wrapper .oj-ip2location-content h6 {
+  color: #aaa;
+}
+
+#operation {
+  height: 50px;
+  padding: 10px;
+}
+
+#operation button {
+  margin: 0;
+  padding: 2px 4px;
+  width: 32px;
+  height: 30px;
+  overflow: hidden;
+  line-height: 24px;
+  font-size: 14px;
+  border-radius: 0 3px 3px 0;
+  outline: none;
+
+  background: #F5F5F5;
+  border: 1px solid #CCCCCC;
 }
 
 #wrapper a.oj-close {
-	display: none;
+  display: none;
 }
+
 #wrapper .oj-ip2location {
-	box-shadow: none;
-	border: none;
-	background: #fff;
+  box-shadow: none;
+  border: none;
+  background: #fff;
 }
 
 #result {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
+
 #content {
-	display: none;
+  display: none;
 }
+
 #content .oj-ip2location-title {
-	background: #ffc;
-	border: solid 1px #ccc;
-	border-left: none;
-	border-right: none;
-	padding: 10px 10px;
-	margin-bottom: 16px;
+  background: #ffc;
+  border: solid 1px #ccc;
+  border-left: none;
+  border-right: none;
+  padding: 10px 10px;
+  margin-bottom: 16px;
 }
 
 #footer {
-	background: #f5f5f5;
-	font-size: 12px;
-	padding: 10px;
-	color: #ccc;
+  background: #f5f5f5;
+  font-size: 12px;
+  padding: 10px;
+  color: #ccc;
 }
+
 #footer a {
-	color: #ccc;
+  color: #ccc;
 }
+
 #footer a:hover {
-	color: #999;
+  color: #999;
 }
