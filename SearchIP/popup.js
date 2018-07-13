@@ -27,11 +27,12 @@ $(document).ready(function () {
 
   $('button').click(doSearch)
   $('input#ipt-ip')
+    .focus()
     .keydown(function (e) {
-    if (e.keyCode === 13) {
-      doSearch()
-    }
-  })
+      if (e.keyCode === 13) {
+        doSearch()
+      }
+    })
     .click(function () {
       this.select()
     })
