@@ -5,7 +5,7 @@
 
 GetIPInfo.addMethod('ipip', function (self, ip, success, fail) {
 
-  var url = 'http://freeapi.ipip.net/' + ip
+  var url = 'https://freeapi.ipip.net/' + ip
 
   $.getJSON(url, function (res) {
     if (!res) {

@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "查IP",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "查找IP对应的地址。",
   "icons": {
     "16": "images/icon_16x16.png",
@@ -37,8 +37,6 @@
         "jquery.js",
         "cf.js",
         "content.js",
-        "lib_methods/ip.apistore.js",
-        "lib_methods/ip138.js",
         "lib_methods/ipip.net.js"
       ],
       "run_at": "document_end",

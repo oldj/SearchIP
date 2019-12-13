@@ -1,7 +1,7 @@
 # SearchIP
 
  * author: oldj
- * blog: [http://oldj.net](http://oldj.net)
+ * blog: [https://oldj.net](https://oldj.net)
  * license: MIT
 
 这是一个Chrome浏览器插件，用于查询指定IP对应的地址。
