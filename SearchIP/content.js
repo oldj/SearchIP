@@ -139,15 +139,15 @@ GetIPInfo.prototype = {
   }
 }
 
-chrome.runtime.onMessage.addListener(function (msg/*, sender, sendResponse*/) {
-  var m
-  if (msg.action === 'SendIP') {
-    m = new GetIPInfo()
-    m.get(msg.ip, null)
-  }
-})
-
-$(document).mousedown(function (e) {
-  current_mouse_pageX = e.pageX
-  current_mouse_pageY = e.pageY
-})
+//chrome.runtime.onMessage.addListener(function (msg/*, sender, sendResponse*/) {
+//  var m
+//  if (msg.action === 'SendIP') {
+//    m = new GetIPInfo()
+//    m.get(msg.ip, null)
+//  }
+//})
+//
+//$(document).mousedown(function (e) {
+//  current_mouse_pageX = e.pageX
+//  current_mouse_pageY = e.pageY
+//})
